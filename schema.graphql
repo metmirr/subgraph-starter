@@ -4,3 +4,8 @@ type Gravatar @entity {
   displayName: String!
   imageUrl: String!
 }
+
+type NextID @entity {
+  id: ID!
+  description: String!
+}

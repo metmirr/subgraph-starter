@@ -8,7 +8,7 @@ dataSources:
     name: Gravity
     network: mainnet
     source:
-      address: '0x1d6F63fddaD6bd40D90F645942d8d780637ed50f'
+      address: "0x687274ad81CF4da41743De08E81c586b740Dc8D6"
       abi: Gravity
     mapping:
       kind: ethereum/events
@@ -24,4 +24,6 @@ dataSources:
           handler: handleNewGravatar
         - event: UpdatedGravatar(uint256,address,string,string)
           handler: handleUpdatedGravatar
+        - event: NextID(uint256,string)
+          handler: handleNextIDGravatar
       file: ./src/mapping.ts
